@@ -55,3 +55,21 @@ button:active{
 .operator-btn:active{
     background-color: hsl(35, 100%, 85%);
 }
+
+/* Added media query for smaller screens */
+@media (max-width: 600px) {
+    #calculator {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #keys {
+        grid-template-columns: repeat(4, 1fr); /* Adjusted grid columns for smaller screens */
+    }
+
+    button {
+        height: 70px; /* Adjusted height for better touch experience on smaller screens */
+        width: 70px;
+        font-size: 1.5rem; /* Adjusted font-size for better fit on smaller screens */
+    }
+}
